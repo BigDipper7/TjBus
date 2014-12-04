@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="服务器设置">
+        <EditTextPreference android:title="服务器IP地址更改" android:key="ksetserver" android:summary="点击输入" android:defaultValue="115.200.53.148" android:dialogTitle="请输入服务器IP地址" />
+        <EditTextPreference android:title="服务器端口号更改" android:key="ksetport" android:summary="点击输入" android:defaultValue="8080" android:dialogTitle="请输入服务器端口号" />
+    </PreferenceCategory>
+</PreferenceScreen>

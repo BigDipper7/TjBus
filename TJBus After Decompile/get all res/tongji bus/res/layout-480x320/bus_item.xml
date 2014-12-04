@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@color/white" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="20.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="发车时间" />
+            <TextView android:textSize="20.0sp" android:textColor="@color/red" android:id="@id/go_time" android:layout_width="90.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="time" />
+        </LinearLayout>
+        <TextView android:textSize="15.0sp" android:textColor="#ffcd8162" android:id="@id/go_line" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="线路" />
+    </LinearLayout>
+    <Button android:id="@id/get_ticket" android:background="@drawable/get_ticket_bg" android:layout_width="30.0dip" android:layout_height="30.0dip" />
+    <ImageView android:id="@id/bus_icon" android:background="@drawable/y_bus" android:layout_width="70.0dip" android:layout_height="50.0dip" android:layout_marginLeft="15.0dip" />
+</LinearLayout>

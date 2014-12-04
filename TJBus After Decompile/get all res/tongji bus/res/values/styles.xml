@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="chat_text_date_style">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:background">#ffbfbfbf</item>
+        <item name="android:padding">2.0dip</item>
+    </style>
+    <style name="chat_content_date_style">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:background">#ffbfbfbf</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:minHeight">50.0dip</item>
+        <item name="android:lineSpacingExtra">2.0dip</item>
+    </style>
+    <style name="chat_text_name_style">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:textColor">#ff818181</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="AppBaseTheme" parent="@android:style/Theme.Light" />
+    <style name="main_tab_bottom">
+        <item name="android:textSize">@dimen/bottom_tab_font_size</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:background">@drawable/home_btn_bg</item>
+        <item name="android:paddingTop">5.0dip</item>
+        <item name="android:paddingBottom">3.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="AppTheme" parent="@style/AppBaseTheme">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+</resources>

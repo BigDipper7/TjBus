@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/ticket_item_bg" android:paddingTop="10.0dip" android:paddingBottom="30.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="18.0sp" android:textColor="@android:color/black" android:layout_gravity="center_horizontal" android:id="@id/when_to_go" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginBottom="10.0dip" android:text="出发时间" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="24.0sp" android:textColor="@android:color/black" android:id="@id/start_place" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:layout_marginRight="10.0dip" android:text="起点" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/bus_icon" android:background="@drawable/bus_in_line" android:layout_width="40.0dip" android:layout_height="30.0dip" android:layout_marginBottom="10.0dip" />
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:background="@android:color/white" android:layout_width="150.0dip" android:layout_height="5.0dip" />
+                <ImageView android:id="@id/progress_tag" android:background="#ff6495ed" android:layout_width="150.0dip" android:layout_height="5.0dip" />
+            </RelativeLayout>
+        </LinearLayout>
+        <TextView android:textSize="24.0sp" android:textColor="@android:color/black" android:id="@id/end_place" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="30.0dip" android:text="终点" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+        <TextView android:textSize="24.0sp" android:textColor="@color/blue" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="姓名" />
+        <TextView android:textSize="24.0sp" android:id="@id/username" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:text="学号" />
+    </LinearLayout>
+</LinearLayout>

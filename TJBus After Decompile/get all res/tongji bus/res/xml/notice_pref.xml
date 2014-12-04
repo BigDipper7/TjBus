@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="服务器设置">
+        <EditTextPreference android:key="notice" android:defaultValue="yes" android:dialogTitle="判断是否是第一次使用" />
+    </PreferenceCategory>
+</PreferenceScreen>

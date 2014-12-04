@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:background="@drawable/title_bar" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:textSize="16.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/back_btn" android:background="@drawable/selector_btn_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="返回" android:layout_centerVertical="true" />
+        <TextView android:textSize="20.0sp" android:textColor="@color/white" android:id="@id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="车票" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0sp" android:layout_gravity="center_horizontal" android:id="@id/liushui" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="流水号" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="24.0sp" android:textColor="@color/blue" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="姓名" />
+                <TextView android:textSize="24.0sp" android:id="@id/username" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:text="学号" />
+            </LinearLayout>
+            <TextView android:textSize="18.0sp" android:textColor="@color/red" android:layout_gravity="center_horizontal" android:id="@id/when_to_go" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="出发时间" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:background="@drawable/shape_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="24.0sp" android:textColor="@android:color/black" android:id="@id/start_place" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:layout_marginRight="10.0dip" android:text="起点" />
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@id/bus_icon" android:background="@drawable/bus_in_line" android:layout_width="40.0dip" android:layout_height="30.0dip" android:layout_marginBottom="10.0dip" />
+                <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:background="#ffffa500" android:layout_width="190.0dip" android:layout_height="5.0dip" />
+                    <ImageView android:id="@id/progress_tag" android:background="#ff6495ed" android:layout_width="190.0dip" android:layout_height="5.0dip" />
+                </RelativeLayout>
+                <TextView android:textSize="15.0sp" android:layout_gravity="center_horizontal" android:id="@id/path_line" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="沪宁高速中途停靠三汽公司" />
+            </LinearLayout>
+            <TextView android:textSize="24.0sp" android:textColor="@android:color/black" android:id="@id/end_place" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="30.0dip" android:text="终点" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/get_ticket" android:background="@drawable/record_bg" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="40.0dip">
+            <Button android:background="@drawable/tj_add" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="30.0dip" />
+            <TextView android:textSize="22.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="我的校车凭证" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center_horizontal" android:id="@id/map_father" android:visibility="gone" android:layout_width="300.0dip" android:layout_height="200.0dip" android:layout_marginTop="20.0dip" />
+        <LinearLayout android:layout_gravity="center_horizontal" android:layout_width="300.0dip" android:layout_height="185.0dip" android:layout_marginTop="5.0dip">
+            <ImageView android:id="@id/picture" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </LinearLayout>
+        <Button android:textSize="22.0sp" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@id/cancel" android:background="@drawable/cancel_ticket" android:layout_width="200.0dip" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="退票" />
+    </LinearLayout>
+</LinearLayout>

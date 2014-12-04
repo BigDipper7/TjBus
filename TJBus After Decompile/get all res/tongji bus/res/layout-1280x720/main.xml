@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost android:id="@android:id/tabhost" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:id="@android:id/tabcontent" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <TabWidget android:id="@android:id/tabs" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <RadioGroup android:gravity="center_vertical" android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/main_tab_group" android:background="@drawable/main_navigation_background" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RadioButton android:id="@id/bus_num" android:checked="true" android:text="抢票" android:drawableTop="@drawable/tj_qiang" style="@style/main_tab_bottom" />
+            <RadioButton android:id="@id/record_num" android:text="凭证" android:drawableTop="@drawable/tj_mail" style="@style/main_tab_bottom" />
+            <RadioButton android:id="@id/history" android:text="历史" android:drawableTop="@drawable/tj_calender" style="@style/main_tab_bottom" />
+            <RadioButton android:id="@id/cancel_ticket" android:text="退票" android:drawableTop="@drawable/tj_delete" style="@style/main_tab_bottom" />
+            <RadioButton android:id="@id/user_center" android:text="信息" android:drawableTop="@drawable/tj_info" style="@style/main_tab_bottom" />
+        </RadioGroup>
+    </LinearLayout>
+</TabHost>
